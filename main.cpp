@@ -8,8 +8,8 @@ bool findPath(Stack& s, MazeLocation cur, Maze& m) {
 bool done = false;
 while(!done){
         if (m.isFinished(cur)) {
-					s.push(cur);
-					m.setChar(cur,'*');
+	    s.push(cur);
+	    m.setChar(cur,'*');
             done = true;
             break;
         }
